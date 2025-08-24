@@ -15,7 +15,8 @@ export const API_ENDPOINTS = {
   // Usuários
   USERS: '/usuarios',
   DOCTORS: '/usuarios/medicos',
-  
+  CHANGE_PASSWORD: '/usuarios',
+
   // Especialidades
   SPECIALTIES: '/especialidades',
   
@@ -30,7 +31,7 @@ export class ApiClient {
   private baseURL: string;
   private token: string | null = null;
 
-  constructor(baseURL: string = API_BASE_URL) {
+    constructor(baseURL: string = API_BASE_URL) {
     this.baseURL = baseURL;
   }
 
